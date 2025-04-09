@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: telegram-signal-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python telegram_command_bot.py"
